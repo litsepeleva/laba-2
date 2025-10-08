@@ -1,0 +1,24 @@
+#include <stdio.h>
+void printb(int N)
+{
+    if (N==0) return;
+    printb(N/2);
+    printf("%d", N%2);
+}
+int main() 
+{
+    double N;
+    printf("Введите натуральное число: ");
+    if (scanf("%lf", &N)!=1)
+    {
+        printf("Ошибка");
+        return 1;
+    }
+    if (N<=0 || N!=(int)N)
+    {
+        printf("Ошибка");
+        return 1;
+    }
+    printb((int)N);
+    return 0;
+}
