@@ -7,9 +7,9 @@ void printb(int N)
 }
 int main() 
 {
-    double N;
+    float N;
     printf("Введите натуральное число: ");
-    if (scanf("%lf", &N)!=1)
+    if (scanf("%f", &N)!=1)
     {
         printf("Ошибка");
         return 1;
